@@ -50,4 +50,5 @@ function isOverlapping(checkInOrOut, existingCheckIns) {
 module.exports = {
   writeResponse,
   isOverlapping,
+  convertTimeToMinutes,
 };
