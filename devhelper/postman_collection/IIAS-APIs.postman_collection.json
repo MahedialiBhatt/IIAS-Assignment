@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "070ab340-3e50-4460-a870-231fef880873",
+		"name": "IIAS-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16990131"
+	},
+	"item": [
+		{
+			"name": "Check In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"instructor_id\": 1,\n  \"date\": \"2024-02-21\",\n  \"check_in_time\": \"01:31\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/checkin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"checkin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check Out",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"instructor_id\": 1,\n  \"date\": \"2024-02-21\",\n  \"check_out_time\": \"01:32\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/checkout",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Monthly report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/monthly-report/02",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"monthly-report",
+						"02"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
